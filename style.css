@@ -1,0 +1,39 @@
+button {
+    position: absolute;
+    bottom: 40px;
+    left: calc(50% - 40px);
+    font-size: 50px;
+    border-radius: 50%;
+    border-style: none;
+    width: 80px;
+    height: 80px;
+    background-color: grey;
+    color: white;
+    overflow: hidden;
+    outline: none;
+
+
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: darkgrey;
+}
+
+
+
+button i {
+    text-shadow: 0 -20px 0 white,
+        0 -40px 0 white;
+    transform: translateY(-50px);
+    animation: arrow 2s linear infinite;
+}
+
+
+
+@keyframes arrow {
+    100% {
+        transform: translateY(95px);
+    }
+}
